@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/globex.jpg";
+import projImg2 from "../assets/img/bairways.jpg";
+import projImg3 from "../assets/img/pixelmap.jpg";
+import projImg4 from "../assets/img/chatmanager.jpg";
+import projImg5 from "../assets/img/supportdesk.jpg";
+import projImg6 from "../assets/img/admin page.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,34 +14,37 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "GLOBEX",
+      description: "Crypto/Share market analize web-app",
       imgUrl: projImg1,
+      siteUrl:"https://www.teamone.shop/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "BAIRWAYS",
+      description: "Air ticket booking website",
       imgUrl: projImg2,
+      siteUrl:"https://bairways.nimsarafernando.com/"
     },
     {
-      title: "Business Startup",
+      title: "PIXELMAP",
       description: "Design & Development",
       imgUrl: projImg3,
+      siteUrl:"https://pixelmap-production.up.railway.app/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "CHAT MANAGER",
+      description: "chat plugin service for websites",
+      imgUrl: projImg4,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Support Desk",
+      description: "custom support ticket app",
+      imgUrl: projImg5,
     },
     {
-      title: "Business Startup",
+      title: "Custom product buying site",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: projImg6,
     },
   ];
 
@@ -51,7 +57,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

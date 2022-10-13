@@ -237,10 +237,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
+  min-height: 100vh;
   background-repeat: no-repeat;
 }
 .banner .tagline {
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
@@ -250,7 +251,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -259,7 +260,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner p {
   color: #B8B8B8;
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
@@ -282,7 +283,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
+/* .banner img {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
@@ -295,22 +296,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     100% {
         transform: translateY(-20px);
     }
-}
+} */
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
 
 /************ Skills Css ************/
 .skill {
+  min-height: 100vh;
+  /* margin-top: 100px; */
   padding: 0 0 50px 0;
   position: relative;
 }
 .skill-bx {
+
   background: #151515;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  margin-top: 100px;
 }
 .skill h2 {
 	font-size: 45px;
@@ -469,7 +473,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  padding: 60px 0 60px 0;
 }
 .contact img {
   width: 92%;
@@ -540,7 +544,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 20px 0 30px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
@@ -616,3 +620,102 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+
+
+
+.box{
+  margin: auto;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box::before{
+  content: '';
+  position:absolute;
+  width:500px;
+  height: 500px;
+  background-image:conic-gradient(transparent,rgb(174, 0, 255),rgb(38, 1, 133));
+  /* background-image: linear-gradient(to left, #ff00e6, #c004ff, #ea03ff, #552e55, #1a2348, #182b4a, #1b324a, #395f7c, #2996c5, #1eb3d5, #00eeff, #00ffee); */
+
+  animation:animate 4s linear infinite ;
+}
+.box:hover .content{
+
+  opacity: 0.9;
+
+  /* animation:animate 4s linear infinite ; */
+}
+
+@keyframes animate{
+  0%
+  {
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+.box span{
+  position: absolute;
+  inset: 5px;
+  background: rgb(38, 1, 133);
+  z-index: 1;
+  border-radius: 50%;
+  opacity: 0.95;
+  
+
+}
+
+
+.box img{
+  position: absolute;
+  width: 290px;
+  z-index: 2;
+  border-radius: 50%;
+  opacity: 0.8;
+
+  
+}
+.content{
+  position: absolute;
+  text-align: center;
+  width: 290px;
+  height: 290px;
+  z-index: 3;
+  border-radius: 50%;
+  background-color: rgb(158, 177, 226);
+  opacity: 0;
+  color: rgb(186, 0, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+
+}
+
+.content a{
+  
+  color: #330071;
+  text-decoration: none;
+  text-shadow: #000;
+  line-height: 28px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.5em
+  
+}
+
+.contact h2{
+  font-size: 3.5em
+}
+
