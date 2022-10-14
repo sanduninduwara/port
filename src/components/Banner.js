@@ -56,8 +56,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated  animate__fadeInLeft" : ""}>
                 <span className="tagline rounded">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Sandun:`}<br></br> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "programmer","freelancer"]'><span className="wrap">{text}</span></span></h1>
-                  <p>I’m a Computer science and Engineering undergraduate with problem-solving and web development skills. I’m very interested in learning and working with cutting-edge technologies 
-</p>
+                  <p>A smart working personality with an undeviating vision and passion towards continuously updating the computer science field, yet I'm affable in dealing with my clients.</p>
                   {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
               </div>}
             </TrackVisibility>
@@ -69,7 +68,7 @@ export const Banner = () => {
                   <div class="box">
                     <div class="content">
                         <h2>HIRE ME!</h2>
-                        <a href="https://www.fiverr.com/users/nishshanka_san/seller_dashboard">Fiverr</a>
+                        <a href="https://www.fiverr.com/nishshanka_san?public_mode=true">Fiverr</a>
                         <a href="#">UpWork</a>
                     </div>
                     <img src={headerImg} alt="Flowers in Chania"/>
