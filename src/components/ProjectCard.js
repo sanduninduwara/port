@@ -4,7 +4,7 @@ export const ProjectCard = ({ title, description, imgUrl,siteUrl }) => {
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx" style={{margin:'auto',marginBottom:'20px'}}>
-        <img src={imgUrl} alt="lala"  style={{objectFit: 'cover',maxHeight:'200px'}}/>
+        <img src={imgUrl} alt="lala"  style={{objectFit: 'cover', maxHeight:'210px'}}/>
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>

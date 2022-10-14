@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/globex.jpg";
+import projImg1 from "../assets/img/globex2.jpg";
 import projImg2 from "../assets/img/bairways.jpg";
 import projImg3 from "../assets/img/pixelmap.jpg";
 import projImg4 from "../assets/img/chatmanager.jpg";
@@ -55,7 +55,7 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+              <div className={isVisible ? "animate__animated ": ""}>
                 <h2>Projects</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -70,7 +70,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated " : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
