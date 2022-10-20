@@ -52,12 +52,12 @@ export const Projects = () => {
     <section className="project" id="projects">
       <Container>
         <Row>
-          <Col size={12}>
+          <Col size={12} className="mt-3">
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated ": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

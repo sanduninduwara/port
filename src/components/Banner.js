@@ -50,13 +50,13 @@ export const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={7} className="mt-4">
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated  animate__fadeInLeft" : ""}>
-                <span className="tagline rounded">Welcome to my Portfolio</span>
+                {/* <span className="tagline rounded">Welcome to my Portfolio</span> */}
                 <h1>{`Hi! I'm Sandun:`}<br></br> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "programmer","freelancer"]'><span className="wrap">{text}</span></span></h1>
-                  <p>A smart working personality with an undeviating vision and passion towards continuously updating the computer science field, yet I'm affable in dealing with my clients.</p>
+                  <p className="me-5">A smart working personality with an undeviating vision and passion towards continuously updating the computer science field</p>
                   {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
               </div>}
             </TrackVisibility>
