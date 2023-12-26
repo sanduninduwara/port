@@ -6,8 +6,8 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
-import { FaNode, FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaFigma, FaDocker, FaAws, FaPython, FaJava, FaPhp } from 'react-icons/fa';
-import { SiJavascript, SiFirebase, SiTailwindcss, SiMysql, SiMongodb, SiPostgresql, SiGithub, SiDocker } from 'react-icons/si';
+import { FaNode, FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaFigma, FaDocker, FaAws, FaPython, FaJava, FaPhp  } from 'react-icons/fa';
+import { SiJavascript, SiFirebase, SiTailwindcss, SiMysql, SiMongodb, SiPostgresql, SiGithub, SiDocker, SiTypescript  } from 'react-icons/si';
 
 
 export const Skills = () => {
@@ -38,7 +38,7 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills & Technologies</h2>
-              <p>These technologies are the most used technologies for my projects, works, and competitions.<br></br>Always trying to learn and apply cutting-edge and best-suitable technologies based on the project. </p>
+              <p>This section spotlights the key technologies I use in my projects, work, and competitions.<br></br>Always eager to learn and apply the latest and most suitable tech for each project.</p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
               
                 <div className="item  mx-4">
@@ -48,6 +48,7 @@ export const Skills = () => {
                   <FaPython size={50} className="m-2" />
                   <SiJavascript size={40} className="m-2" />
                   <FaPhp size={40} className="m-2" />
+                  <SiTypescript size={40} className="m-2" />
                 </div>
                 <div className="item  mx-4">
                   {/* <img src={meter2} alt="Image" /> */}
@@ -74,9 +75,10 @@ export const Skills = () => {
                 </div>
                 <div className="item   mx-4">
                   <h4 className="mb-4">Web Designing</h4>
-                  <FaBootstrap size={50} className="m-2" />
+                 
                   <FaFigma size={45} className="m-2" />
                   <SiTailwindcss size={40} className="m-2" />
+                  <FaBootstrap size={50} className="m-2" />
                   <FaHtml5 size={50} className="m-2" />
                   <FaCss3Alt size={50} className="m-2" />
                   <SiJavascript size={40} className="m-2" />

@@ -9,7 +9,6 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
   const toRotate = ["Web Developer", "programmer", "freelancer"];
   const period = 2000;
 
@@ -34,29 +33,26 @@ export const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setIndex(1);
       setDelta(500);
     } else {
-      setIndex(prevIndex => prevIndex + 1);
     }
   }
 
   return (
     <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
+      <Container className="my-4">
+        <Row className="aligh-items-center ">
           <Col xs={12} md={6} xl={7} className="mt-4">
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated  animate__fadeInLeft" : "d-none"}>
                   {/* {/* <span className="tagline rounded">Welcome to my Portfolio</span> */}
                   {/* <div className={"animate__animated  animate__fadeInLeft"}> */}
-                  <h1>{`Hi! I'm Sandun:`}<br></br> <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "programmer","freelancer"]'><span className="wrap">{text}</span></span></h1>
+                  <h1>{`Hi! I'm Sandun:`}<br></br> <span className="txt-rotate" data-rotate='[ "Web Developer", "programmer","freelancer"]'><span className="wrap">{text}</span></span></h1>
                   <p className="me-5">A smart working personality with an undeviating vision and passion towards continuously updating the computer science field</p>
                   {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
                   {/* </div> */}
@@ -67,11 +63,10 @@ export const Banner = () => {
 
             {/* <div className={isVisible ? "animate__animated animate__zoomIn" : ""}> */}
             {/* <img src={headerImg} alt="Header Img"/> */}
-            <div class="box">
-              <div class="content">
+            <div className="box">
+              <div className="content">
                 <h2>HIRE ME!</h2>
                 <a href="https://www.fiverr.com/nishshanka_san?public_mode=true">Fiverr</a>
-                <a href="#">UpWork</a>
               </div>
               <img src={headerImg} alt="Flowers in Chania" />
               <span></span>
